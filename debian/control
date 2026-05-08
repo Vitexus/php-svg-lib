@@ -1,0 +1,17 @@
+Source: php-vitexus-php-svg-lib
+Section: php
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends: debhelper-compat (= 13), jq
+Standards-Version: 4.6.2
+Homepage: https://github.com/dompdf/php-svg-lib
+Vcs-Git: https://github.com/Vitexus/php-svg-lib.git
+Rules-Requires-Root: no
+
+Package: php-vitexus-php-svg-lib
+Architecture: all
+Depends: ${misc:Depends}, php-cli | php, php-mbstring, php-vitexus-php-css-parser
+Description: PHP SVG Library - parse and render SVG documents
+ A library to parse and render SVG documents in PHP. Supports
+ basic SVG elements including paths, shapes, text, gradients,
+ and CSS styling. Used by dompdf for SVG rendering in PDF output.
