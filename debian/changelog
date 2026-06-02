@@ -1,4 +1,4 @@
-php-vitexus-php-svg-lib (1.0.2) trixie; urgency=low
+php-dompdf-php-svg-lib (1.0.2) trixie; urgency=low
 
   * Initial Debian packaging
 

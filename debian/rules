@@ -6,8 +6,8 @@ PKG_SOURCE  := $(shell jq -r '.name' composer.json)
 	dh $@
 
 override_dh_install:
-	mkdir -p debian/php-vitexus-php-svg-lib/usr/share/php/Svg
-	cp -r src/Svg/. debian/php-vitexus-php-svg-lib/usr/share/php/Svg/
-	install -m 644 debian/autoload.php debian/php-vitexus-php-svg-lib/usr/share/php/Svg/autoload.php
-	sed -i "s|'unknown'|'$(PKG_SOURCE)'|" debian/php-vitexus-php-svg-lib/usr/share/php/Svg/autoload.php
-	sed -i "s|'0.0.0'|'$(PKG_VERSION)'|" debian/php-vitexus-php-svg-lib/usr/share/php/Svg/autoload.php
+	mkdir -p debian/php-dompdf-php-svg-lib/usr/share/php/Svg
+	cp -r src/Svg/. debian/php-dompdf-php-svg-lib/usr/share/php/Svg/
+	install -m 644 debian/autoload.php debian/php-dompdf-php-svg-lib/usr/share/php/Svg/autoload.php
+	sed -i "s|'unknown'|'$(PKG_SOURCE)'|" debian/php-dompdf-php-svg-lib/usr/share/php/Svg/autoload.php
+	sed -i "s|'0.0.0'|'$(PKG_VERSION)'|" debian/php-dompdf-php-svg-lib/usr/share/php/Svg/autoload.php
